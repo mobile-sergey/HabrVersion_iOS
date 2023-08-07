@@ -13,6 +13,7 @@
 		B8AA2B822A8102AE001B44AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AA2B802A8102AE001B44AE /* Main.storyboard */; };
 		B8AA2B842A8102B0001B44AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AA2B832A8102B0001B44AE /* Assets.xcassets */; };
 		B8AA2B872A8102B0001B44AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AA2B852A8102B0001B44AE /* LaunchScreen.storyboard */; };
+		B8AA2B902A814A6A001B44AE /* version.sh in Resources */ = {isa = PBXBuildFile; fileRef = B8AA2B8F2A814A6A001B44AE /* version.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B8AA2B832A8102B0001B44AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8AA2B862A8102B0001B44AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8AA2B882A8102B0001B44AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8AA2B8F2A814A6A001B44AE /* version.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = version.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		B8AA2B6E2A8102AE001B44AE = {
 			isa = PBXGroup;
 			children = (
+				B8AA2B8F2A814A6A001B44AE /* version.sh */,
 				B8AA2B792A8102AE001B44AE /* Version */,
 				B8AA2B782A8102AE001B44AE /* Products */,
 			);
@@ -77,6 +80,7 @@
 				B8AA2B732A8102AE001B44AE /* Sources */,
 				B8AA2B742A8102AE001B44AE /* Frameworks */,
 				B8AA2B752A8102AE001B44AE /* Resources */,
+				B8AA2B8E2A814972001B44AE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -126,12 +130,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8AA2B872A8102B0001B44AE /* LaunchScreen.storyboard in Resources */,
+				B8AA2B902A814A6A001B44AE /* version.sh in Resources */,
 				B8AA2B842A8102B0001B44AE /* Assets.xcassets in Resources */,
 				B8AA2B822A8102AE001B44AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B8AA2B8E2A814972001B44AE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$SRCROOT/version.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B8AA2B732A8102AE001B44AE /* Sources */ = {
