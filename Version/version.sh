@@ -7,7 +7,7 @@
 #  
 
 # 1.In Build Phases add "New Run Script Phase" with "$SRCROOT/version.sh"
-# 2.Add this script to folder Scripts of project
+# 2.Add this script to project
 # 3.Add version.sh to main Target
 # 4.Change permission of version.sh in Terminal: sudo chmod 770 version.sh
 
@@ -35,5 +35,5 @@ else
 fi
 
 # 7.Rewrite label with that has user name "APP_VERSION" in LaunchScreen.storyboard with version from git
-sourceFilePath="$PROJECT_DIR/$PROJECT_NAME/Storyboards/LaunchScreen.storyboard"
-sed -i .bak -e "/userLabel=\"APP_VERSION\"/s/text=\"[^\"]*\"/text=\"$git_tag ($git_version)\"/" "$sourceFilePath"
+sourceFilePath="$PROJECT_DIR/$PROJECT_NAME/Base.lproj/LaunchScreen.storyboard"
+sed -i .bak -e "/userLabel=\"APP_VERSION\"/s/text=\"[^\"]*\"/text=\"$git_tag.$git_version\"/" "$sourceFilePath"
